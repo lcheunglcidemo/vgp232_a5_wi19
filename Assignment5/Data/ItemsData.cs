@@ -12,9 +12,34 @@ namespace Assignment5.Data
         [XmlArray]
         public List<Item> Items { get; set; }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public ItemsData()
         {
             Items = new List<Item>();
+        }
+
+        /// <summary>
+        /// Gets all the items that are equal or less than level requirement
+        /// </summary>
+        /// <param name="level">The minimum required level</param>
+        /// <returns>List of items that meet the requirement</returns>
+        public List<Item> UnlockedItemsAtLevel(int level)
+        {
+            // TODO: implement function to get all items and add unit to confirm it works.
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Gets the item with the matching name
+        /// </summary>
+        /// <param name="name">The name of the item.</param>
+        /// <returns>The item with the name specified or null if not found</returns>
+        public Item FindItem(string name)
+        {
+            // TODO: implement function to find the item with the name specified.
+            throw new NotImplementedException();
         }
     }
 }
