@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Assignment5.Data;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +14,13 @@ namespace Assignment5
         {
             Console.WriteLine("Welcome to Assignment 5 - Pokemon Edition");
 
-            // TODO: load the pokemon151 xml
+            PokemonReader reader = new PokemonReader();
+            Pokedex pokedex = reader.Load("pokemon151.xml");
+
+            foreach (Pokemon pokemon in pokedex.Pokemons)
+            {
+                Console.WriteLine(pokemon.Name);
+            }
 
             Console.ReadKey();
         }
