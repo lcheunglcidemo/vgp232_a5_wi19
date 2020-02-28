@@ -17,6 +17,7 @@ namespace Assignment5.Data
         /// </summary>
         public PokemonReader()
         {
+            // Add a comment there
             serializer = new XmlSerializer(typeof(Pokedex));
         }
 
